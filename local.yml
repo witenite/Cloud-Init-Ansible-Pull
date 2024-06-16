@@ -4,6 +4,6 @@
   tasks:
     - include_tasks: tasks/cron-user.yml
     - include_tasks: tasks/user-witenite.yml
-    - include_tasks: taska/user-funkular.yml
+    - include_tasks: tasks/user-funkular.yml
     - include_tasks: tasks/install_base_apps.yml
 
