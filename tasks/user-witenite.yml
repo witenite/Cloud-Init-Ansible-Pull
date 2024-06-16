@@ -2,6 +2,8 @@
   user:
     name: witenite
     groups: root
+    shell: /bin/bash
+    
  
 - name: add ssh key for Witenite
   authorized_key:
