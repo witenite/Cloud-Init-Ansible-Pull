@@ -4,7 +4,7 @@
  
   tasks:
 
-    - include: tasks/cron-user.yml
+  - include: tasks/cron-user.yml
 
   - name: install packages
     package:
