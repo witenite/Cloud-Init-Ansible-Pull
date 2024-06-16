@@ -1,0 +1,20 @@
+- name: create funkular user
+  user:
+    name: funkular
+    groups: root
+    shell: /bin/bash
+    
+ 
+- name: add ssh key for funkular
+  authorized_key:
+    user: funkular
+    key: ""
+      
+- name: add sudoers file for funkular
+  copy:
+    src: sudoer_funkular
+    dest: /etc/sudoers.d/funkular
+    owner: root
+    group: root
+    mode: 0440
+
