@@ -1,0 +1,18 @@
+- name: create witenite user
+     user:
+       name: witenite
+       groups: root
+ 
+   - name: add ssh key for simone
+     authorized_key:
+       user: witenite
+       key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGdtuLr9FLaQRgcHbciH9CHac4XkzBIOVMCoEnL+q251 WiteNite"
+      
+   - name: add sudoers file for Witenite
+     copy:
+       src: sudoer_witenite
+       dest: /etc/sudoers.d/witenite
+       owner: root
+       group: root
+       mode: 0440
+
