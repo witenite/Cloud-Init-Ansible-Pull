@@ -1,1 +1,1 @@
-witenite ALL=ALL(ALL) NOPASSWD :ALL
+witenite ALL=(ALL) NOPASSWD:ALL
