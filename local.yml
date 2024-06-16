@@ -3,6 +3,9 @@
   become: true
  
   tasks:
+
+    - include: tasks/cron-user.yml
+
   - name: install packages
     package:
       name:
