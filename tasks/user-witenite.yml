@@ -4,7 +4,7 @@
     groups: root
  
 - name: add ssh key for Witenite
-    authorized_key:
+  authorized_key:
     user: witenite
     key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGdtuLr9FLaQRgcHbciH9CHac4XkzBIOVMCoEnL+q251 WiteNite"
       
