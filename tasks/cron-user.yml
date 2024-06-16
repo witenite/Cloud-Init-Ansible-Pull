@@ -2,6 +2,7 @@
   user:
     name: ansible-user
     system: yes
+    create_home: no
  
 - name: set up sudo for ansible user
   copy:
@@ -10,6 +11,7 @@
     owner: root
     group: root
     mode: 0440
+ 
 - name: add ansible-pull cron job
   cron:
     name: ansible auto-provision
