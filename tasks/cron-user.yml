@@ -2,7 +2,7 @@
   user:
     name: ansible-user
     system: yes
-    create_home: no
+    shell: /bin/bash
  
 - name: set up sudo for ansible user
   copy:
