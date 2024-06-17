@@ -1,0 +1,19 @@
+#cloud-config
+packages:
+  - git
+  - ansible
+package_upgrade: true
+package_reboot_if_required: true 
+
+bootcmd:
+  - date > /etc/birth_certificate
+  - echo "127.0.0.1 {name}.witenite.ca {name}" > /etc/hosts
+  - echo "127.0.0.1 localhost" >> /etc/hosts
+  - echo "::1 localhost ip6-localhost ip6-loopback" >> /etc/hosts
+  - echo "ff02::1 ip6-allnodes" >> /etc/hosts
+  - echo "ff02::2 ip6-allrouters" >> /etc/hosts
+
+runcmd:
+  - ansible-pull -U https://github.com/witenite/Cloud-Init-Ansible-Pull.git
+preserve_hostname: false
+hostname: {name}
