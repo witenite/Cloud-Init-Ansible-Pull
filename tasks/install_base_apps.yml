@@ -7,3 +7,4 @@
       - avahi-daemon
       - vim
       - neovim
+      - mc
