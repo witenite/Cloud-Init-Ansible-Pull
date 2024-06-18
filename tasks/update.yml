@@ -1,0 +1,5 @@
+- name Update System Packages
+  apt
+  - update_cache: yes
+  - upgrade: dist
+  
