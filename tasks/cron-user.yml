@@ -17,4 +17,4 @@
     name: ansible auto-provision
     user: ansible-user
     minute: "*/10"
-    job: ansible-pull -o -U https://github.com/witenite/Cloud-Init-Ansible-Pull.git
+    job: ansible-pull -o -U https://github.com/witenite/Cloud-Init-Ansible-Pull.git >> /home/ansible-user/Ans-Pull.log
