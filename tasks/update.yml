@@ -1,5 +1,4 @@
 - name: Update Packages
-  ansible.builtin.apt:
-    - update_cache: yes
-    - upgrade: dist
-  
+  apt:
+    update_cache: yes
+    upgrade: dist
