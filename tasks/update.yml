@@ -1,5 +1,5 @@
 - name: Update System Packages
   ansible.builtin.apt:
-  - update_cache: yes
-  - upgrade: dist
+    - update_cache: yes
+    - upgrade: dist
   
