@@ -12,10 +12,18 @@
     group: root
     mode: 0440
 
-- name: set up sudo for ansible user
+- name: Add home bin directory  
+  file:
+    path: /home/ansible-user/bin
+    state: directory
+    owner: ansible-user
+    group: ansible-user
+    mode: 0770
+
+- name: Add Update script to user home bin folder
   copy:
     src: files/apt-update-upgrade
-    dest: ~/bin/apt-update-upgrade
+    dest: /home/ansible-user/bin/apt-update-upgrade
     owner: ansible-user
     group: ansible-user
     mode: 0770
