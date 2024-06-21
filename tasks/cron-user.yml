@@ -11,10 +11,25 @@
     owner: root
     group: root
     mode: 0440
- 
+
+- name: set up sudo for ansible user
+  copy:
+    src: files/apt-update-upgrade
+    dest: ~/bin/apt-update-upgrade
+    owner: ansible-user
+    group: ansible-user
+    mode: 0770
+
 - name: add ansible-pull cron job
   cron:
     name: ansible auto-provision
     user: ansible-user
     minute: "*/10"
     job: ansible-pull -o -U https://github.com/witenite/Cloud-Init-Ansible-Pull.git >> /home/ansible-user/Ans-Pull.log
+
+- name: add ansible-pull cron job
+  cron:
+    name: Apt-Update-Cron
+    user: ansible-user
+    hour: "4"
+    job: ~/bin/apt-update-upgrade
