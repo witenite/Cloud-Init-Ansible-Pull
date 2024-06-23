@@ -1,1 +1,1 @@
-funkular ALL=(ALL) NOPASSWD:ALL
+funkular-admin ALL=(ALL) NOPASSWD:ALL
