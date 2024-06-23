@@ -1,1 +1,1 @@
-witenite ALL=(ALL) NOPASSWD:ALL
+witenite-admin ALL=(ALL) NOPASSWD:ALL
