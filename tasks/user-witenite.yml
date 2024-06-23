@@ -1,19 +1,19 @@
 - name: create witenite user
   user:
-    name: witenite
+    name: witenite-admin
     groups: root
     shell: /bin/bash
     
  
 - name: add ssh key for Witenite
   authorized_key:
-    user: witenite
+    user: witenite-admin
     key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGdtuLr9FLaQRgcHbciH9CHac4XkzBIOVMCoEnL+q251 WiteNite"
       
 - name: add sudoers file for Witenite
   copy:
     src: sudoer_witenite
-    dest: /etc/sudoers.d/witenite
+    dest: /etc/sudoers.d/witenite-admin
     owner: root
     group: root
     mode: 0440
