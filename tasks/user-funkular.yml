@@ -1,19 +1,19 @@
 - name: create funkular user
   user:
-    name: funkular
+    name: funkular-admin
     groups: root
     shell: /bin/bash
     
  
 - name: add ssh key for funkular
   authorized_key:
-    user: funkular
+    user: funkular-admin
     key: ""
       
 - name: add sudoers file for funkular
   copy:
     src: sudoer_funkular
-    dest: /etc/sudoers.d/funkular
+    dest: /etc/sudoers.d/funkular-admin
     owner: root
     group: root
     mode: 0440
