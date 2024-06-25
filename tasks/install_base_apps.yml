@@ -11,3 +11,4 @@
       - nfs-common
       - open-iscsi
       - watchdog
+      - curl
