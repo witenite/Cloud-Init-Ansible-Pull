@@ -8,7 +8,7 @@
 - name: add ssh key for Witenite-admin
   authorized_key:
     user: witenite-admin
-    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGdtuLr9FLaQRgcHbciH9CHac4XkzBIOVMCoEnL+q251 witenite-admin"
+    key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGdtuLr9FLaQRgcHbciH9CHac4XkzBIOVMCoEnL+q251 witenite"
       
 - name: add sudoers file for Witenite
   copy:
