@@ -14,6 +14,6 @@ bootcmd:
   - echo "ff02::2 ip6-allrouters" >> /etc/hosts
 
 runcmd:
-  - ansible-pull -U https://github.com/witenite/Cloud-Init-Ansible-Pull.git
+  - ansible-pull -U https://github.com/witenite/Cloud-Init-Ansible-Pull.git provision.yml
 preserve_hostname: false
 hostname: {name}
