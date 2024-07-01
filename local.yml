@@ -4,4 +4,5 @@
   tasks:
     - include_tasks: tasks/update.yml
     - include_tasks: tasks/install_base_apps.yml
+     - include_tasks: tasks/cron-user.yml
 
