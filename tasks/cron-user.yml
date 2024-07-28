@@ -40,4 +40,4 @@
     name: Apt-Update-Cron
     user: ansible-user
     hour: "*/4"
-    job: ~/bin/apt-update-upgrade >> /home/ansible-user/Apt-Upgrade.log
+    job: /home/ansible-user/bin/apt-update-upgrade >> /home/ansible-user/Apt-Upgrade.log
