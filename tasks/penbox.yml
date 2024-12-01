@@ -1,0 +1,15 @@
+- name: install packages
+  package:
+    name:
+      - htop
+      - tmux
+      - vim-nox
+      - wget
+      - vim
+      - nmap
+      - mc
+      - nfs-common
+      - open-iscsi
+      - watchdog
+      - curl
+      - net-tools
