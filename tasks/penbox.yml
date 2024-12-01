@@ -1,13 +1,13 @@
 - name: install packages
   package:
     name:
-      - htop
+      - gobuster
       - tmux
       - vim-nox
       - wget
       - vim
       - nmap
-      - mc
+      - rsync
       - nfs-common
       - open-iscsi
       - watchdog
