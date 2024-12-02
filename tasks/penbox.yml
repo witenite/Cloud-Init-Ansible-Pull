@@ -9,7 +9,7 @@
       - nmap
       - rsync
       - nfs-common
-      - open-iscsi
+      - whatweb
       - watchdog
       - curl
       - net-tools
