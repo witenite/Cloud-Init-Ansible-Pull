@@ -13,3 +13,7 @@
       - watchdog
       - curl
       - net-tools
+      - whois
+      - tcpdump
+      - ftp
+      - 
