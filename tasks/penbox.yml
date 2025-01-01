@@ -17,4 +17,4 @@
       - tcpdump
       - ftp
       - john
-      - 
+      - sqlite3
