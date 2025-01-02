@@ -19,3 +19,4 @@
       - john
       - sqlite3
       - hydra
+      - sqlmap
