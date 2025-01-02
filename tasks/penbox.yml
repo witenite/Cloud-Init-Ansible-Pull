@@ -18,3 +18,4 @@
       - ftp
       - john
       - sqlite3
+      - hydra
