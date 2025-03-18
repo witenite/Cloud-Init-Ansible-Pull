@@ -33,7 +33,7 @@
     name: ansible auto-provision
     user: ansible-user
     hour: "*/1"
-    job: ansible-pull -o -U https://github.com/witenite/Cloud-Init-Ansible-Pull.git >> /home/ansible-user/Ans-Pull.log
+    job: ansible-pull -o -U http://gitlab.witenite.ca/ansible/Provision.git >> /home/ansible-user/Ans-Pull.log
 
 - name: add ansible-pull cron job
   cron:
